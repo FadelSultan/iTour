@@ -14,11 +14,12 @@ struct DestinationListingView: View {
     @Environment (\.modelContext) var modelContext
 
     
-    init(sort: SortDescriptor<Destination> , searchSting:String) {
-        
+    init(sort: SortDescriptor<Destination> , searchSting:String , showFutureDestination:Bool) {
+        let now = Date.now
         _destinations = Query(filter: #Predicate {
+            showFutureDestination ?  $0.date > now : true &&
             searchSting.isEmpty ? true : $0.name.localizedStandardContains(searchSting)
-        },sort: [sort])
+        },sort: [sort , SortDescriptor(\Destination.date,order: .reverse)])
     }
     
     var body: some View {
@@ -46,5 +47,5 @@ struct DestinationListingView: View {
 }
 
 #Preview {
-    DestinationListingView(sort: SortDescriptor(\Destination.name), searchSting: "")
+    DestinationListingView(sort: SortDescriptor(\Destination.name), searchSting: "", showFutureDestination: true)
 }

@@ -14,12 +14,12 @@ struct ContentView: View {
     @State private var path = [Destination]()
     @State private var sortOrder = SortDescriptor(\Destination.name)
     @State private var searchText = ""
-    
+    @State private var showFutureDestination:Bool = false
     
     var body: some View {
         NavigationStack(path:$path) {
             
-            DestinationListingView(sort: sortOrder, searchSting: searchText)
+            DestinationListingView(sort: sortOrder, searchSting: searchText, showFutureDestination: showFutureDestination)
             .navigationTitle("iTour")
             .searchable(text: $searchText)
             .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
@@ -38,6 +38,15 @@ struct ContentView: View {
                             .tag(SortDescriptor(\Destination.date))
                     }
                     .pickerStyle(.inline)
+                }
+                
+                Menu("Show Future" , systemImage: "eye") {
+                    Picker("Show Future", selection: $showFutureDestination) {
+                        Text("Yes")
+                            .tag(true)
+                        Text("No")
+                            .tag(false)
+                    }.pickerStyle(.inline)
                 }
 
             }
