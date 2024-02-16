@@ -11,6 +11,9 @@
 		E52DD25C2B7F98210098C851 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DD25B2B7F98210098C851 /* ContentView.swift */; };
 		E52DD25E2B7F98220098C851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52DD25D2B7F98220098C851 /* Assets.xcassets */; };
 		E52DD2612B7F98220098C851 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52DD2602B7F98220098C851 /* Preview Assets.xcassets */; };
+		E52DD2682B7F98DD0098C851 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DD2672B7F98DD0098C851 /* Destination.swift */; };
+		E52DD26A2B7F9F330098C851 /* EditDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DD2692B7F9F330098C851 /* EditDestinationView.swift */; };
+		E52DD26C2B7FB7E40098C851 /* DestinationListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DD26B2B7FB7E40098C851 /* DestinationListingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E52DD25B2B7F98210098C851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E52DD25D2B7F98220098C851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52DD2602B7F98220098C851 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E52DD2672B7F98DD0098C851 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		E52DD2692B7F9F330098C851 /* EditDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDestinationView.swift; sourceTree = "<group>"; };
+		E52DD26B2B7FB7E40098C851 /* DestinationListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationListingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				E52DD2592B7F98210098C851 /* iTourApp.swift */,
 				E52DD25B2B7F98210098C851 /* ContentView.swift */,
+				E52DD2672B7F98DD0098C851 /* Destination.swift */,
+				E52DD2692B7F9F330098C851 /* EditDestinationView.swift */,
+				E52DD26B2B7FB7E40098C851 /* DestinationListingView.swift */,
 				E52DD25D2B7F98220098C851 /* Assets.xcassets */,
 				E52DD25F2B7F98220098C851 /* Preview Content */,
 			);
@@ -139,6 +148,9 @@
 			files = (
 				E52DD25C2B7F98210098C851 /* ContentView.swift in Sources */,
 				E52DD25A2B7F98210098C851 /* iTourApp.swift in Sources */,
+				E52DD2682B7F98DD0098C851 /* Destination.swift in Sources */,
+				E52DD26A2B7F9F330098C851 /* EditDestinationView.swift in Sources */,
+				E52DD26C2B7FB7E40098C851 /* DestinationListingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
